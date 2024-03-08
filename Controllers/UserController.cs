@@ -1,3 +1,4 @@
+using infraAlerta.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace infraAlerta.Controllers;
@@ -11,5 +12,11 @@ public class UserController : ControllerBase
     public string Get()
     {
         return "usuários";
+    }
+
+    [HttpPost("createUser", Name = "createUser")]
+    public User Create(string name){
+        
+        return new User();
     }
 }
