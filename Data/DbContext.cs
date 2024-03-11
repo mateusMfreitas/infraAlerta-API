@@ -7,5 +7,9 @@ namespace infraAlerta.Data{
 
         }
         public DbSet<User> User { get; set;}
+        public DbSet<Problem> Problem { get; set;}
+        public DbSet<Problem_address> Problem_Address{get;set;}
+        public DbSet<User_address> User_Address {get;set;}
+
     }
 }

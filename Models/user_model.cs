@@ -3,7 +3,10 @@ namespace infraAlerta.Models
 {
     public class User{
         [Key]
-        [StringLength(2, MinimumLength =2, ErrorMessage ="O campo deve ter 2 caracteress")]
-        public string Nome {get;set;}
+        public int user_id{get;set;}
+        public string name {get;set;}
+        public string cpf{get;set;}
+        public string phone{get;set;}
+        public bool admin{get;set;}
     }
 }

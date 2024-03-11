@@ -11,7 +11,7 @@ using infraAlerta.Data;
 namespace infraAlerta.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20240308004655_InitialCreate")]
+    [Migration("20240311222727_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -26,11 +26,28 @@ namespace infraAlerta.Migrations
 
             modelBuilder.Entity("infraAlerta.Models.User", b =>
                 {
-                    b.Property<string>("Nome")
-                        .HasMaxLength(2)
-                        .HasColumnType("varchar(2)");
+                    b.Property<int>("user_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.HasKey("Nome");
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("user_id"));
+
+                    b.Property<bool>("admin")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("cpf")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("phone")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("user_id");
 
                     b.ToTable("User");
                 });
