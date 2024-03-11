@@ -17,7 +17,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("getUsers", Name = "getUsers")]
-    public string Get()
+    public string GetUsers()
     {
         return "usuários";
     }
