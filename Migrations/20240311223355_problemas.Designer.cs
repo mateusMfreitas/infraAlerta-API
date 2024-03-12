@@ -26,28 +26,25 @@ namespace infraAlerta.Migrations
 
             modelBuilder.Entity("infraAlerta.Models.Problem", b =>
                 {
-                    b.Property<int>("user_id")
+                    b.Property<int>("pro_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("user_id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("pro_id"));
 
-                    b.Property<bool>("admin")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("cpf")
+                    b.Property<string>("pro_name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("name")
+                    b.Property<string>("pro_classification")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("phone")
+                        b.Property<string>("pro_photo")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.HasKey("user_id");
+                    b.HasKey("pro_id");
 
                     b.ToTable("Problem");
                 });

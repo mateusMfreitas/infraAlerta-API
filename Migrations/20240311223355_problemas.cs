@@ -15,19 +15,18 @@ namespace infraAlerta.Migrations
                 name: "Problem",
                 columns: table => new
                 {
-                    user_id = table.Column<int>(type: "int", nullable: false)
+                    pro_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    name = table.Column<string>(type: "longtext", nullable: false)
+                    pro_name = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    cpf = table.Column<string>(type: "longtext", nullable: false)
+                    pro_classification = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    phone = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    admin = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                    pro_photo = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Problem", x => x.user_id);
+                    table.PrimaryKey("PK_Problem", x => x.pro_id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
         }

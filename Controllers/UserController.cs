@@ -17,9 +17,10 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("getUsers", Name = "getUsers")]
-    public string GetUsers()
+    public IActionResult GetUsers()
     {
-        return "usuários";
+        var users = _context.User.ToList();
+        return Ok(users);
     }
 
     [HttpPost("createUser", Name = "createUser")]
