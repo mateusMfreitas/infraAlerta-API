@@ -17,12 +17,49 @@
   },
   {
     "ContainingType": "infraAlerta.Controllers.ProblemController",
+    "Method": "DeleteProblem",
+    "RelativePath": "problem/deleteProblem/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "infraAlerta.Controllers.ProblemController",
     "Method": "GetProblems",
     "RelativePath": "problem/getProblems",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "infraAlerta.Controllers.ProblemController",
+    "Method": "UpdateProblem",
+    "RelativePath": "problem/updateProblem/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedProblem",
+        "Type": "infraAlerta.Models.Problem",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
