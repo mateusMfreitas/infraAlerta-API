@@ -80,12 +80,49 @@
   },
   {
     "ContainingType": "infraAlerta.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "user/deleteUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "infraAlerta.Controllers.UserController",
     "Method": "GetUsers",
     "RelativePath": "user/getUsers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "infraAlerta.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "user/updateUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedUser",
+        "Type": "infraAlerta.Models.User",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
