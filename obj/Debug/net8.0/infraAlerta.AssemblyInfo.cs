@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("infraAlerta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+186ef9557b131758830cfce73fc7835f26274732")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de315bad1ee047b4333d6e0ec260a189a87b4901")]
 [assembly: System.Reflection.AssemblyProductAttribute("infraAlerta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("infraAlerta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
